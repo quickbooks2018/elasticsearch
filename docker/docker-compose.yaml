@@ -11,7 +11,7 @@ services:
       - elasticsearch:/bitnami/elasticsearch/data
 
   kibana:
-    image: bitnami/kibana:latest
+    image: bitnami/kibana:7.9.3
     networks:
       - elk
     restart: unless-stopped
