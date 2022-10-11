@@ -1,3 +1,5 @@
+# https://stackoverflow.com/questions/42889241/how-to-increase-vm-max-map-count
+
 cat <<EOF >> /etc/sysctl.conf
 vm.max_map_count=262144
 EOF
