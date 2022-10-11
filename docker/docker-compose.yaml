@@ -1,6 +1,6 @@
-services:
+services:                                                # create external network elk
   elasticsearch:
-    image: bitnami/elasticsearch:7.9.3
+    image: bitnami/elasticsearch:7.9.3                   # docker network create elk --attachable
     networks:
       - elk
     restart: unless-stopped
