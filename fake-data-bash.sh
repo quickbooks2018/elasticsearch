@@ -3,7 +3,7 @@
 timestamp=`date +"%Y-%m-%d %T"`
 system_name="hostname"
 
-es=`curl -u 'admin':'Pakistan1982!@#$%' -XPOST "https://search-cloudgeeks-y42nrqpnslyr6vgwweqpnwj7ai.us-east-1.es.amazonaws.com/backup_timestamps/_doc" -H 'Content-Type: application/json' -d '
+es=`curl -u 'USERNAME':'PASSWORD' -XPOST "https://search-cloudgeeks-y42nrqpnslyr6vgwweqpnwj7ai.us-east-1.es.amazonaws.com/backup_timestamps/_doc" -H 'Content-Type: application/json' -d '
 {
     "timestamp": "$timestamp",
     "system_name": "$system_name"
