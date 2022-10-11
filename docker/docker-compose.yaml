@@ -2,7 +2,7 @@ services:                                                # create external netwo
   elasticsearch:
     image: bitnami/elasticsearch:7.9.3                   # docker network create elk --attachable
     networks:
-      - elk
+      - elk                                               # docker compose -p elk up -d
     restart: unless-stopped
     container_name: elasticsearch
     ports:
